@@ -50,16 +50,22 @@ public class main {
 
         */
 
+        // TEST CODE FOR indexFound
+        String[][] words = {{"hi", "bye", "stuff", "go"}, {"time", "up", "you", "good"}, {"map", "low", "bow", "mom"}};
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words, "stuff")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words, "good")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words, "map")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words, "cat")));
+        System.out.println("--------------");
 
-        String[][] arr4 ={{"time"}};
+        String[][] words2 = {{"time", "up", "bye"}, {"hi", "hit", "up"}, {"map", "bam", "low"}, {"bow", "mom", "joy"}};
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words2, "time")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words2, "joy")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words2, "bam")));
+        System.out.println(Arrays.toString(FunWith2DArrays.indexFound(words2, "cat")));
 
 
 
 
-        FunWith2DArrays.fourCorners(arr4);
-
-
-
-
-}
+    }
 }
